@@ -1,0 +1,17 @@
+.product li {
+  font-size: 1.3em;
+}
+.product button {
+  margin-bottom: 20px;
+}
+.cart li {
+  margin-bottom: 10px;
+}
+.remove.btn {
+  padding: 5px;
+  font-size: 12px;
+  line-height: inherit;
+  height: inherit;
+  text-transform: inherit;
+  margin-left: 10px;
+}
