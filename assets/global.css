@@ -20,5 +20,6 @@
   margin-left: 10px;
 }
 .component {
-  border: dashed 2px #424242;
+  border: dashed 1px #424242;
+  padding: 10px;
 }
