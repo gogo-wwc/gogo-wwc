@@ -1,14 +1,14 @@
 <template>
   <div id="app" class="container">
     <h4 class="header">Shopping Cart Example</h4>
-    <total title="Total"></total>
+    <total title="Total" free-shipping-rule="3"></total>
     <div class="divider"></div>
     <div class="section">
       <product-list title="Products"></product-list>
     </div>
     <div class="divider"></div>
     <div class="section">
-      <cart title="Your Cart"></cart>
+      <cart title="Your Cart" allow-remove></cart>
     </div>
   </div>
 </template>

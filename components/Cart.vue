@@ -8,7 +8,7 @@
       <li v-for="p in products" v-bind:key="p.id" class="teal-text text-darken-2">
         <span>{{ p.title }} - {{ p.price | currency }} x {{ p.quantity }}</span>
         <!-- Remove from cart -->
-        <span><button @click="remove(p.id)" class="remove btn deep-orange darken-2">Remove</button></span>
+        <span v-show="allowRemove"><button @click="remove(p.id)" class="remove btn deep-orange darken-2">Remove</button></span>
       </li>
     </ul>
     <p>Total: {{ total | currency }}</p>
@@ -21,7 +21,16 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  props: ['title'],
+  props: {
+    title: {
+      type: String,
+      default: ''
+    },
+    allowRemove: {
+      type: Boolean,
+      default: false
+    }
+  },
   computed: {
     // grab some existing getters into component
     ...mapGetters({
