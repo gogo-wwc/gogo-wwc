@@ -1,5 +1,5 @@
 <template>
-  <div class="component">
+  <div class="total">
     <p>{{title}}: {{total}}</p>
     <p v-show="isFreeShipping" class="deep-orange-text text-darken-2">Congratulations! You qualify free shipping!</p>
   </div>
@@ -12,6 +12,7 @@ export default {
       type: String,
       default: ''
     },
+    // prop example: free-shipping-rule defaults to 5
     freeShippingRule: {
       type: Number,
       default: 5
@@ -24,6 +25,7 @@ export default {
       }, 0)
     },
     isFreeShipping() {
+      // prop example: free-shipping-rule if totals items in cart >= the prop rule FREE SHIPPING!!!!
       return this.total >= this.freeShippingRule;
     }
   }

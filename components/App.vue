@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="container">
     <h4 class="header">Shopping Cart Example</h4>
+    <!-- prop example: override default free-shipping-rule value [set in Total.vue]-->
     <total title="Total" :free-shipping-rule="3"></total>
     <div class="divider"></div>
     <div class="section">
@@ -8,6 +9,7 @@
     </div>
     <div class="divider"></div>
     <div class="section">
+      <!-- prop example: set allow-remove to true [set in Cart.vue]-->
       <cart title="Your Cart" allow-remove></cart>
     </div>
   </div>

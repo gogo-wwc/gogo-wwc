@@ -11,12 +11,14 @@ const _products = [
 export default {
   fetchProducts() {
     return new Promise((resolve) => {
+      // Make some GET ajax call (Mock data here)
       setTimeout(() => resolve(_products), 100);
     })
   },
 
   buyProducts (products) {
     return new Promise((resolve, reject) => {
+      // Make some POST ajax call (Mock data here)
       setTimeout(() => (Math.random() > 0.5) ? resolve() : reject(), 100);
     })
   }
