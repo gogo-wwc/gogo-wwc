@@ -1,5 +1,4 @@
 .header {
-  text-align: center;
   font-weight: 800;
 }
 .product li {
@@ -22,4 +21,10 @@
 .component {
   border: dashed 1px #424242;
   padding: 10px;
+}
+.container .row.header-wrapper {
+  margin-right: 0;
+}
+#app {
+  margin-top: 20px;
 }
