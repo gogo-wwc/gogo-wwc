@@ -1,7 +1,5 @@
 .header {
-  display: inline-block;
   font-weight: 800;
-  float: left;
 }
 .product li {
   font-size: 1.3em;
@@ -21,14 +19,12 @@
   margin-left: 10px;
 }
 .component {
-  clear: both;
   border: dashed 1px #424242;
   padding: 10px;
 }
-
-.total {
-  float: right;
-  text-align: right;
-  border: dashed 1px #424242;
-  padding: 10px;
+.container .row.header-wrapper {
+  margin-right: 0;
+}
+#app {
+  margin-top: 20px;
 }

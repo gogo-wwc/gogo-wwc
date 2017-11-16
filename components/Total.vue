@@ -1,7 +1,7 @@
 <template>
-  <div class="total">
+  <div class="component">
     <p>{{title}}: {{total}}</p>
-    <p v-show="isFreeShipping" class="deep-orange-text text-darken-2">Congratulations! You qualify free shipping!</p>
+    <p v-show="isFreeShipping" class="deep-orange-text text-darken-2">Free shipping!</p>
   </div>
 </template>
 
